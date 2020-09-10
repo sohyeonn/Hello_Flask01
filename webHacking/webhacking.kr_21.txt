@@ -1,0 +1,16 @@
+
+no   id   pw
+ 1    5     5
+ 2    5     19
+
+-1 or no=1 and length(id)=5
+-1 or no=2 and length(id)=5
+
+-1 or no=1 and length(pw)=5
+-1 or no=1 and length(pw)=19
+
+1 and ascii(substr(id,1,1))=97   x
+2 and ascii(substr(id,1,1))=97   O
+2 and ascii(substr(id,2,1))=100  O
+
+no 2 id: admin

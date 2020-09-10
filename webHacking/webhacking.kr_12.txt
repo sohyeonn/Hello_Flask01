@@ -1,0 +1,21 @@
+"var enco='';
+var enco2=126;
+var enco3=33;
+var ck=document.URL.substr(document.URL.indexOf('='));  //=문자부터 문자열을 잘라 ck에 저장
+ 
+ 
+for(i=1;i<122;i++)
+{
+enco=enco+String.fromCharCode(i,0);  // 아스키코드 1부터 122번까지 문자를 enco에 저장
+}
+ 
+function enco_(x)
+{
+return enco.charCodeAt(x);  //x위치의 문자열 반환
+}
+ 
+if(ck=="="+String.fromCharCode(enco_(240))+String.fromCharCode(enco_(220))+String.fromCharCode(enco_(232))+String.fromCharCode(enco_(192))+String.fromCharCode(enco_(226))+String.fromCharCode(enco_(200))+String.fromCharCode(enco_(204))+String.fromCharCode(enco_(222-2))+String.fromCharCode(enco_(198))+"~~~~~~"+String.fromCharCode(enco2)+String.fromCharCode(enco3))
+{
+alert("Password is "+ck.replace("=",""));
+}
+"
